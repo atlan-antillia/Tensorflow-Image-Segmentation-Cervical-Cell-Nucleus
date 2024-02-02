@@ -1,4 +1,4 @@
-<h2>Tensorflow-Image-Segmentation-Cervical-Cell-Nucleus (2024/02/02)</h2>
+<h2>Tensorflow-Image-Segmentation-Cervical-Cell-Nucleus (Updated: 2024/02/03)</h2>
 
 This is an experimental Image Segmentation project for Cervical-Cell-Nucleus based on
 the <a href="https://github.com/sarah-antillia/Tensorflow-Image-Segmentation-API">Tensorflow-Image-Segmentation-API</a>.
@@ -15,6 +15,7 @@ you may try other Tensorflow UNet Models:<br>
 <li><a href="./src/TensorflowUNet3Plus.py">TensorflowUNet3Plus.py</a></li>
 <br>
 
+<li>2024/02/03: Updated Cervical-Cell-Nucleus-MaskDataset, and retrained and evaluated UNetMode Model by the new datatset. </li><br>
 
 <h3>1. Dataset Citatioin</h3>
 
@@ -47,10 +48,10 @@ CC BY 4.0
 </a>
 </h3>
  If you would like to train this Cervical-Cell-Nucleus Segmentation model by yourself,
- please download the  
+ please download the latest 
  augmented dataset of image-size 512x512 from the google drive 
 <a href="https://drive.google.com/file/d/1hyxctv-trt36A72YXHGklo5GEUZOf0jR/view?usp=sharing">
-Cervial-Cell-Nucleus-ImageMask-Dataset.zip.</a>
+Cervial-Cell-Nucleus-ImageMask-Dataset.zip </a>, of which the mask files updated.<br> 
 
 Please see also the <a href="https://github.com/atlan-antillia/Cervical-Cell-Nucleus-ImageDataset">Cervical-Cell-Nucleus-ImageDataset</a>.<br>
 
@@ -149,7 +150,7 @@ and run the following bat file to train TensorflowUNet model for Cervical-Cell-N
 python ../../../src/TensorflowUNetTrainer.py ./train_eval_infer.config
 </pre>
 Train console output:<br>
-<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/asset/train_console_output_at_epoch_88.png" width="720" height="auto"><br>
+<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/asset/train_console_output_at_epoch_100.png" width="720" height="auto"><br>
 <br>
 
 Train metrics:<br>
@@ -170,9 +171,13 @@ and run the following bat file to evaluate TensorflowUNet model for Cervical-Cel
 python ../../../src/TensorflowUNetEvaluator.py ./train_eval_infer.config
 </pre>
 Evaluation console output:<br>
-<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/asset/evaluate_console_output_at_epoch_88.png" width="720" height="auto"><br>
-As shown above, the accuracy 0.9972 for the test dataset is very high.
-
+<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/asset/evaluate_console_output_at_epoch_100.png" width="720" height="auto"><br>
+As shown above, the accuracy 0.9970 for the test dataset is very high.
+<pre>
+Test loss    :0.1144
+Test accuracy:0.9970
+</pre>
+<br>
 <h2>
 3.3 Inference
 </h2>
@@ -199,50 +204,50 @@ Merged test images and inferred masks<br>
 Enlarged samples<br>
 <table>
 <tr>
-<td>test/images/18.jpg<br>
-<img src="./dataset/Cervical-Cell-Nucleus/test/images/18.jpg" width="512" height="auto">
+<td>test/images/40.jpg<br>
+<img src="./dataset/Cervical-Cell-Nucleus/test/images/40.jpg" width="512" height="auto">
 
 </td>
-<td>Inferred merged/18.jpg<br>
-<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/18.jpg" width="512" height="auto">
+<td>Inferred merged/40.jpg<br>
+<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/40.jpg" width="512" height="auto">
 </td> 
 </tr>
 
 <tr>
-<td>test/images/294.jpg<br>
-<img src="./dataset/Cervical-Cell-Nucleus/test/images/294.jpg" width="512" height="auto">
+<td>test/images/253.jpg<br>
+<img src="./dataset/Cervical-Cell-Nucleus/test/images/253.jpg" width="512" height="auto">
 
 </td>
-<td>Inferred merged/294.jpg<br>
-<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/294.jpg" width="512" height="auto">
+<td>Inferred merged/253.jpg<br>
+<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/253.jpg" width="512" height="auto">
 </td> 
 </tr>
 
 
-<tr><td>test/images/flipped_12.jpg<br>
-<img src="./dataset/Cervical-Cell-Nucleus/test/images/flipped_12.jpg" width="512" height="auto">
+<tr><td>test/images/flipped_275.jpg<br>
+<img src="./dataset/Cervical-Cell-Nucleus/test/images/flipped_275.jpg" width="512" height="auto">
 </td>
-<td>Inferred merged/flipped_12.jpg<br>
-<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/flipped_12.jpg" width="512" height="auto">
+<td>Inferred merged/flipped_275.jpg<br>
+<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/flipped_275.jpg" width="512" height="auto">
 </td> 
 </tr>
 
 <tr>
-<td>test/images/mirrored_303.jpg<br>
-<img src="./dataset/Cervical-Cell-Nucleus/test/images/mirrored_303.jpg" width="512" height="auto">
+<td>test/images/mirrored_123.jpg<br>
+<img src="./dataset/Cervical-Cell-Nucleus/test/images/mirrored_123.jpg" width="512" height="auto">
 </td>
 <td>
-Inferred merged/mirrored_303.jpg<br>
-<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/mirrored_303.jpg" width="512" height="auto">
+Inferred merged/mirrored_123.jpg<br>
+<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/mirrored_123.jpg" width="512" height="auto">
 </td> 
 </tr>
 
 <tr>
-<td>test/images/rotated_180_287.jpg<br>
-<img src="./dataset/Cervical-Cell-Nucleus/test/images/rotated_180_287.jpg" width="512" height="auto">
+<td>test/images/rotated_180_304.jpg<br>
+<img src="./dataset/Cervical-Cell-Nucleus/test/images/rotated_180_304.jpg" width="512" height="auto">
 </td>
 <td>Inferred merged/rotated_180_287.jpg<br>
-<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/rotated_180_287.jpg" width="512" height="auto">
+<img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/rotated_180_304.jpg" width="512" height="auto">
 </td> 
 </tr>
 </table>
