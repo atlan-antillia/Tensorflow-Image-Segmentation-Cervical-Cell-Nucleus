@@ -75,7 +75,7 @@ Please run the following bat file to count the number of images in this dataset.
 </pre> 
 , which generates the following <b>Cervical-Cell-Nucleus_Statistics.png</b> file.<br>
 <b>Cervical-Cell-Nucleus Dataset Statistics</b><br>
-<img src ="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/Cervical-Cell-Nucleus_Statistics.png" width="640" height="auto"><br>
+<img src ="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/Cervical-Cell-Nucleus_Statistics.png" width="512" height="auto"><br>
 
 
 <h3>
