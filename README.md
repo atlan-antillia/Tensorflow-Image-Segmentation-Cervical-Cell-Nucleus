@@ -200,47 +200,37 @@ Merged test images and inferred masks<br>
 Enlarged samples<br>
 <table>
 <tr>
-<td>
-test/images/18.jpg<br>
+<td>test/images/18.jpg<br>
 <img src="./dataset/Cervical-Cell-Nucleus/test/images/18.jpg" width="512" height="auto">
 
 </td>
-<td>
-Inferred merged/18.jpg<br>
+<td>Inferred merged/18.jpg<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/18.jpg" width="512" height="auto">
 </td> 
 </tr>
 
 <tr>
-<td>
-test/images/294.jpg<br>
+<td>test/images/294.jpg<br>
 <img src="./dataset/Cervical-Cell-Nucleus/test/images/294.jpg" width="512" height="auto">
 
 </td>
-<td>
-Inferred merged/294.jpg<br>
+<td>Inferred merged/294.jpg<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/294.jpg" width="512" height="auto">
 </td> 
 </tr>
 
 
-<tr>
-<td>
-test/images/flipped_12.jpg<br>
+<tr><td>test/images/flipped_12.jpg<br>
 <img src="./dataset/Cervical-Cell-Nucleus/test/images/flipped_12.jpg" width="512" height="auto">
-
 </td>
-<td>
-Inferred merged/flipped_12.jpg<br>
+<td>Inferred merged/flipped_12.jpg<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/flipped_12.jpg" width="512" height="auto">
 </td> 
 </tr>
 
 <tr>
-<td>
-test/images/mirrored_303.jpg<br>
+<td>test/images/mirrored_303.jpg<br>
 <img src="./dataset/Cervical-Cell-Nucleus/test/images/mirrored_303.jpg" width="512" height="auto">
-
 </td>
 <td>
 Inferred merged/mirrored_303.jpg<br>
@@ -249,13 +239,10 @@ Inferred merged/mirrored_303.jpg<br>
 </tr>
 
 <tr>
-<td>
-test/images/rotated_180_287.jpg<br>
+<td>test/images/rotated_180_287.jpg<br>
 <img src="./dataset/Cervical-Cell-Nucleus/test/images/rotated_180_287.jpg" width="512" height="auto">
-
 </td>
-<td>
-Inferred merged/rotated_180_287.jpg<br>
+<td>Inferred merged/rotated_180_287.jpg<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/rotated_180_287.jpg" width="512" height="auto">
 </td> 
 </tr>
