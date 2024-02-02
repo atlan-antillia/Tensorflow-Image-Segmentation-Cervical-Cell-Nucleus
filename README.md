@@ -51,9 +51,9 @@ CC BY 4.0
  augmented dataset of image-size 512x512 from the google drive 
 <a href="https://drive.google.com/file/d/1hyxctv-trt36A72YXHGklo5GEUZOf0jR/view?usp=sharing">
 Cervial-Cell-Nucleus-ImageMask-Dataset.zip.</a>
-<!--
-Please see also the <a href="https://github.com/atlan-antillia/Cervical-Cell-Nucleus-Image-Dataset">Cervical-Cell-Nucleus-Image-Dataset</a>.<br>
--->
+
+Please see also the <a href="https://github.com/atlan-antillia/Cervical-Cell-Nucleus-ImageDataset">Cervical-Cell-Nucleus-ImageDataset</a>.<br>
+
 Please expand the downloaded ImageMaskDataset and place them under <b>./dataset</b> folder to be
 
 <pre>
