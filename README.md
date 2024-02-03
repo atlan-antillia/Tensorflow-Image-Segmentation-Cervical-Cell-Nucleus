@@ -15,7 +15,7 @@ you may try other Tensorflow UNet Models:<br>
 <li><a href="./src/TensorflowUNet3Plus.py">TensorflowUNet3Plus.py</a></li>
 <br>
 
-<li>2024/02/03: Updated Cervical-Cell-Nucleus-MaskDataset, and retrained and evaluated UNetMode Model by the new datatset. </li><br>
+<li>2024/02/03: Updated Cervical-Cell-Nucleus-MaskDataset, and retrained and evaluated UNet Model by the new datatset. </li><br>
 
 <h3>1. Dataset Citatioin</h3>
 
