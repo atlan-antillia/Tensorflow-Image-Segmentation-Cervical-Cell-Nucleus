@@ -252,7 +252,7 @@ Inferred merged/mirrored_123.jpg<br>
 <td>test/images/rotated_180_304.jpg<br>
 <img src="./dataset/Cervical-Cell-Nucleus/test/images/rotated_180_304.jpg" width="512" height="auto">
 </td>
-<td>Inferred merged/rotated_180_287.jpg<br>
+<td>Inferred merged/rotated_180_304.jpg<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/test_output_merged/rotated_180_304.jpg" width="512" height="auto">
 </td> 
 </tr>
