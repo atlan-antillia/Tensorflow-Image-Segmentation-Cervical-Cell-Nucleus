@@ -170,9 +170,12 @@ and run the following bat file to evaluate TensorflowUNet model for Cervical-Cel
 <pre>
 python ../../../src/TensorflowUNetEvaluator.py ./train_eval_infer.config
 </pre>
+This <a href="../../../src/TensorflowUNetEvaluator.py">TensorflowUNetEvaluator.py</a>
+ evaluates the segmentation accuracy for the <b>valid</b> dataset.<br>
+
 Evaluation console output:<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/asset/evaluate_console_output_at_epoch_100.png" width="720" height="auto"><br>
-As shown above, the accuracy 0.9970 for the test dataset is very high.
+As shown above, the accuracy 0.9970 for the <b>valid</b> dataset is very high.
 <pre>
 Test loss    :0.1144
 Test accuracy:0.9970
@@ -189,6 +192,9 @@ Please move to a <b>./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucl
 <pre>
 python ../../../src/TensorflowUNetInferencer.py ./train_eval_infer.config
 </pre>
+This <a href="../../../src/TensorflowUNetInferencer.py">TensorflowUNetInferencer.py</a>
+ infers the segmentation region for the <b>test/images</b> dataset.<br>
+ 
 Sample test images<br>
 <img src="./projects/TensorflowSlightlyFlexibleUNet/Cervical-Cell-Nucleus/asset/sample_test_images.png" width="1024" height="auto"><br>
 Sample test mask<br>
